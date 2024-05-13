@@ -29,12 +29,18 @@
           <nav class="nav-bar">
             <ul class="header__nav-list">
               <li>
-                <a href="./index.html" data-active="index.html" class="nav-link">Studio</a>
+                <a href="./index.html" data-active="index.html" class="nav-link"
+                  >Studio</a
+                >
               </li>
               <li>
                 <a href="./portofolio.html" class="nav-link">Portofolio</a>
               </li>
-              <li><a href="#contact"  data-active="#contact" class="nav-link">Contacts</a></li>
+              <li>
+                <a href="#contact" data-active="#contact" class="nav-link"
+                  >Contacts</a
+                >
+              </li>
             </ul>
           </nav>
           <div class="header__nav-links">
@@ -450,6 +456,29 @@
               </div>
             </div>
           </section>
+          <section class="subscribe-section">
+            <h3 class="subscribe-section__title">
+              Subscribe to the newsletter
+            </h3>
+            <div class="subscribe-wrapper">
+              <form name="subscribe-form" class="subscribe-form">
+                <label class="subscribe-form__position">
+                  <input
+                    type="email"
+                    name="usermail"
+                    class="subscribe-form__input"
+                    placeholder="Email"
+                  />
+                </label>
+              </form>
+              <div class="subscribe-btn__section">
+                <button class="subscribe-btn" type="submit">Subscribe</button>
+                <svg class="subscribe-btn__svg" widt="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
     </footer>
@@ -457,7 +486,61 @@
     <div data-modal class="is-hidden">
       <div data-modal-contend>
         <button data-modal-close type="button">x</button>
-        <h2>Salut!!</h2>
+        <h2 class="modal-title">
+          Leave your information and we'll call you back
+        </h2>
+        <form name="modal-form" class="modal-form">
+          <label class="modal-form__position"
+            >Name<input
+              type="text"
+              name="username "
+              class="modal-form__input"
+            />
+            <svg width="12px" height="12px" class="modal-form__svg">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </label>
+          <label class="modal-form__position"
+            >Telefon
+            <input type="tel" name="userphone" class="modal-form__input" />
+            <svg width="12px" height="12px" class="modal-form__svg">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="modal-form__position"
+            >Email
+            <input type="email" name="useremail" class="modal-form__input" />
+            <svg width="12px" height="12px" class="modal-form__svg">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </label>
+          <label class="modal-form__position"
+            >Mesaj
+            <textarea
+              name="mesaj"
+              placeholder="introdu mesajul tau"
+              class="modal-form__coments"
+              rows="5"
+            >
+            </textarea>
+          </label>
+          <label class="modal-form__position modal-form__checked form-checked">
+            <input
+              type="checkbox"
+              name="agree"
+              value="agree"
+              class="modal-form__input modal-form__checkbox"
+            />
+            <span class="replace-checkbox modal-checkbox">
+              <svg width="10px" height="10px" class="modal-checkbox__svg">
+                <use href="./images/icons.svg#icon-checked"></use>
+              </svg>
+            </span>
+            I agree with the letter and accept the
+            <a href="#" class="conditions">Terms and Conditions</a>
+          </label>
+          <button type="submit" class="modal-form__btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
