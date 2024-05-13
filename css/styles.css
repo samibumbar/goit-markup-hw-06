@@ -242,6 +242,9 @@ body {
   padding: 5px 10px;
   /* color: var(--primary-text-color); */
 }
+[data-modal-close]:hover {
+  color: var(--hover-color);
+}
 .modal-title {
   font-family: inherit;
   font-size: 20px;
