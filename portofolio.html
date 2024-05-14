@@ -33,9 +33,18 @@
                 <a href="./index.html" class="nav-link">Studio</a>
               </li>
               <li class="active">
-                <a href="./portofolio.html" data-active="portofolio.html" class="nav-link">Portofolio</a>
+                <a
+                  href="./portofolio.html"
+                  data-active="portofolio.html"
+                  class="nav-link"
+                  >Portofolio</a
+                >
               </li>
-              <li class="active"><a href="#contact" data-active="#contact" class="nav-link">Contacts</a></li>
+              <li class="active">
+                <a href="#contact" data-active="#contact" class="nav-link"
+                  >Contacts</a
+                >
+              </li>
             </ul>
           </nav>
           <div class="header__nav-links">
@@ -278,35 +287,58 @@
             </address>
           </div>
           <section class="find-us__section">
-            <div><h3 class="find-us__title">FIND US ON</h3></div>
+            <h3 class="find-us__title">FIND US ON</h3>
             <div class="find-us__icons">
               <div class="find-us-icon">
-                <a href="https://www.instagram.com/">
+                <a href="https://www.instagram.com/" target="_blank">
                   <svg class="find-us-icon__item">
                     <use href="./images/icons.svg#icon-instagram" />
                   </svg>
                 </a>
               </div>
               <div class="find-us-icon">
-                <a class="find-us-icon__links" href="https://twitter.com/">
+                <a href="https://twitter.com/" target="_blank">
                   <svg class="find-us-icon__item">
                     <use href="./images/icons.svg#icon-twitter" />
                   </svg>
                 </a>
               </div>
               <div class="find-us-icon">
-                <a href="https://de-de.facebook.com/">
+                <a href="https://de-de.facebook.com/" target="_blank">
                   <svg class="find-us-icon__item">
                     <use href="./images/icons.svg#icon-facebook" />
                   </svg>
                 </a>
               </div>
               <div class="find-us-icon">
-                <a href="https://www.linkedin.com/feed/">
+                <a href="https://www.linkedin.com/feed/" target="_blank">
                   <svg class="find-us-icon__item">
                     <use href="./images/icons.svg#icon-linkedin" />
                   </svg>
                 </a>
+              </div>
+            </div>
+          </section>
+          <section class="subscribe-section">
+            <h3 class="subscribe-section__title">
+              Subscribe to the newsletter
+            </h3>
+            <div class="subscribe-wrapper">
+              <form name="subscribe-form" class="subscribe-form">
+                <label class="subscribe-form__position">
+                  <input
+                    type="email"
+                    name="usermail"
+                    class="subscribe-form__input"
+                    placeholder="Email"
+                  />
+                </label>
+              </form>
+              <div class="subscribe-btn__section">
+                <button class="subscribe-btn" type="submit">Subscribe</button>
+                <svg class="subscribe-btn__svg" widt="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+                </svg>
               </div>
             </div>
           </section>

@@ -664,14 +664,25 @@ body {
   background-color: var(--hover-color);
   color: var(--white-color);
   border-radius: 4px;
-  outline: none;
   border: none;
+  cursor: pointer;
+}
+.subscribe-btn:hover + .subscribe-btn__svg,
+.subscribe-btn:focus + .subscribe-btn__svg {
+  transform: translateY(-0.35em);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  transform: translateY(-0.35em);
+  transition: var(--cubic-bezier-transition);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover-color);
 }
 .subscribe-btn__svg {
   position: absolute;
   top: 12px;
   left: 10px;
   fill: var(--white-color);
+  cursor: pointer;
 }
 /*Portofolio*/
 .btn-list {
